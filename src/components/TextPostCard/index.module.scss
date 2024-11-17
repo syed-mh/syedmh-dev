@@ -1,0 +1,19 @@
+.textPostCard {
+  padding: 1rem 0;
+  display: grid;
+  gap: 0.25rem;
+
+  &__meta {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+
+  &__readMore {
+    color: var(--tertiaryColor);
+    font-weight: 600;
+
+    &:hover {
+      color: var(--secondaryColor);
+    }
+  }
+}
