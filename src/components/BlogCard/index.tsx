@@ -1,3 +1,4 @@
+import { getReadingTime } from "@/utils/getReadingTime";
 import styles from "./index.module.scss";
 
 /* eslint @next/next/no-img-element:0 */
@@ -25,7 +26,7 @@ export const BlogCard = (props: props) => (
           <a href={props.category.url}>{props.category.title}</a>
         </span>
         <span> :: </span>
-        <span>6 minute read</span>
+        <span>{getReadingTime(props.duration)}</span>
       </div>
       <a href={props.url} className={styles.blogCard__readMore}>
         Read More
