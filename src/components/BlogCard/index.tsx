@@ -15,7 +15,7 @@ type props = {
 
 export const BlogCard = (props: props) => (
   <article className={styles.blogCard}>
-    <figure className="backdrop">
+    <figure className={styles.blogCard__backdrop}>
       <img src={props.thumbnail} alt={props.title} />
     </figure>
     <div className={styles.blogCard__content}>
