@@ -48,6 +48,45 @@ export default function RootLayout({
           </div>
         </header>
         <main className="container">{children}</main>
+        <footer>
+          <div className="container">
+            <div>
+              <h2>Get in touch with me</h2>
+              <a href="mailto:contactsyedmh@gmail.com">
+                contactsyedmh@gmail.com
+              </a>
+            </div>
+            <div className="navigation">
+              <h2>Useful links</h2>
+              <ul>
+                <li>
+                  <a href="_#">Learning resources</a>
+                </li>
+                <li>
+                  <a href="_#">Inspiration</a>
+                </li>
+                <li>
+                  <a href="_#">Podcasts</a>
+                </li>
+                <li>
+                  <a href="_#">People</a>
+                </li>
+                <li>
+                  <a href="_#">Older work</a>
+                </li>
+                <li>
+                  <a href="_#">Older blogs</a>
+                </li>
+                <li>
+                  <a href="_#">About me</a>
+                </li>
+                <li>
+                  <a href="_#">About this site</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
