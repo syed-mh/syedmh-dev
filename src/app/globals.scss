@@ -99,6 +99,24 @@ a {
   }
 }
 
+.secondaryButton {
+  font-size: 1rem;
+  padding: 0.75rem 0.75rem;
+  margin-top: 1.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-color: var(--primaryColor);
+  color: var(--tertiaryColor);
+  transition: background-color 100ms ease-out;
+  font-weight: 500;
+
+  &:hover {
+    background-color: var(--primaryDarkColor);
+  }
+}
+
 header {
   .container {
     padding: 1rem 0;
@@ -133,6 +151,35 @@ header {
   }
 }
 
+footer {
+  .container {
+    padding: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid var(--tertiaryColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .navigation {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
 .section-title {
   position: relative;
   width: max-content;
@@ -146,5 +193,15 @@ header {
     width: 50%;
     height: 1px;
     bottom: -1px;
+  }
+}
+
+.filter-image-container {
+  background-color: var(--primaryColor);
+  opacity: 0.4;
+  backdrop-filter: saturation;
+
+  img {
+    filter: saturate(0.4);
   }
 }
