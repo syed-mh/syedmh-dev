@@ -14,7 +14,7 @@ type props = {
 };
 
 export const BlogCard = (props: props) => (
-  <div className={styles.blogCard}>
+  <article className={styles.blogCard}>
     <figure className="backdrop">
       <img src={props.thumbnail} alt={props.title} />
     </figure>
@@ -31,5 +31,5 @@ export const BlogCard = (props: props) => (
         Read More
       </a>
     </div>
-  </div>
+  </article>
 );
